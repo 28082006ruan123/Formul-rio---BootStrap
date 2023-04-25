@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Banco de Dados</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Opções
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Gráficos</a>
+                    <a class="dropdown-item" href="#">Planilhas</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Média geral</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Desativado</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+              </form>
+            </div>
+          </nav>
+        <form>
+          <br>
+            <div class="form-row">
+                <div class="form-group col-md-8">
+                    <label for="inputEmail4">Nome</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nome">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputPassword4">Data de nascimento</label>
+                    <input type="date" class="form-control" id="inputPassword4" placeholder="Data">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Nome da mãe</label>
+                    <input type="text" class="form-control" id="inputEmail4" placeholder="Nome da mãe:">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Nome do pai</label>
+                    <input type="text" class="form-control" id="inputPassword4" placeholder="Nome do pai:">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="cidade">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEstado">Curso</label>
+                    <select id="inputEstado" class="form-control">
+                        <option selected>Selecione o curso:</option>
+                        <option>Informática</option>
+                        <option>Enfermagem</option>
+                        <option>Comércio</option>
+                        <option>Administração</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputCEP">Turma:</label>
+                    <input type="text" class="form-control" id="inputCEP">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-3">
+                    <label for="inputCity">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco" placeholder="Ex: Rua Maria José"> 
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCity">Complemento:</label>
+                    <input type="text" class="form-control" id="complemento" placeholder="Atrás da Igreja Matriz">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCity">Bairro:</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Ex: Cidade Nova">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="inputCity">CEP:</label>
+                    <input type="number" class="form-control" id="cep" placeholder="00000-000"
+                        onblur="buscaCEP(this.value)">
+                </div>
+                <!-- Botão para acionar modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ExemploModalCentralizado">
+    Enviar Dados
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="TituloModalCentralizado">Deseja continuar?</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Você confirmar essas informações?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Salvar mudanças</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        </form>
+</body>
+
+</html>
